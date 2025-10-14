@@ -1,0 +1,85 @@
+# Ignore : Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Ignore : Environment
+.env
+.env.*
+!*.env.example
+next-env.d.ts
+
+# Ignore : Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+*.trace
+*.d.ts.map
+
+# Ignore : Outputs
+dist/
+build/
+out/
+.swc/
+.cache/
+.temp/
+.tmp/
+*.tsbuildinfo
+
+# Ignore : IDE
+.idea/
+.vscode/
+.fleet/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore : Testing
+coverage/
+test-results/
+jest.config.js
+*.snap
+
+# Ignore : Frameworks & Platforms
+.next/
+.nuxt/
+.vercel/
+.turbo/
+
+# Ignore : CI/CD & Deployment
+.DS_Store
+*.pem
+*.key
+*.crt
+*.pub
+*.ndjson
+*.csv
+*.sqlite
+*.db
+*.tinyb
+.venv
+*.lockb
+*.tgz
+*.npmrc
+
+# Ignore : Vendors & Generated
+generated/
+gen/
+types/generated.ts
+.eslintcache
+.prettiercache
+
+# Ignore : Monorepo & Workspace
+packages/*/dist/
+packages/*/coverage/
+
+# Ignore : OS & Misc
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*.bak
+*.tmp
