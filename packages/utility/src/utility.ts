@@ -14,9 +14,9 @@ export class Utility {
    * @param {number} min
    * @param {number} max
    *
-   * @return {number}
+   * @return {any}
    */
-  public static clamp(value: number, min: number, max: number): number {
+  public static clamp(value: number, min: number, max: number): any {
     if (value < min)
       return min
 

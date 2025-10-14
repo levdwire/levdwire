@@ -1,9 +1,9 @@
 {
-  "private"           : true,
-  "name"              : "@levdwire/utility",
+  "type"              : "module",
+  "name"              : "@levdwire/logger",
   "description"       : "Utility functions and constants by Levdwire for type-safe, reusable, and framework-agnostic development workflows.",
   "keywords"          : ["sirketio", "utility", "utils", "functions", "constants", "type-safe", "toolkit", "shared-code", "framework-agnostic"],
-  "license"           : "AGPL-3.0-or-later",
+  "license"           : "MIT",
   "homepage"          : "https://sirketio.com/",
   "version"           : "1.0.0",
 
@@ -19,22 +19,13 @@
   },
 
   "scripts"           : {
-    "lint"  : "eslint src/",
-    "check" : "tsc --noEmit"
+
   },
 
-  "dependencies"      : {
-    "clsx"                    : "^2.1.1",
-    "ms"                      : "^2.1.3",
-    "js-cookie"               : "^3.0.5",
-    "nanoid"                  : "^5.0.1",
-    "tailwind-merge"          : "^3.3.1"
-  },
   "devDependencies"   : {
     "@levdwire/presets"       : "^1.0.0",
-    "@types/ms"               : "^2.1.0",
-    "@types/js-cookie"        : "^3.0.6",
     "@types/node"             : "^24.6.0",
+    "chalk"                   : "^5.6.2",
     "typescript"              : "^5.9.2"
   },
 
