@@ -1,11 +1,11 @@
 {
-  "private"           : true,
+  "type"              : "module",
   "name"              : "@levdwire/presets",
-  "description"       : "Levdwire - Reusable eslint presets to enforce consistent code style, type safety, and best practices across projects.",
+  "description"       : "Levdwire – Reusable ESLint, TypeScript, and Prettier presets to enforce consistent code style, type safety, and best practices across projects.",
   "keywords"          : ["eslint","eslint-config","eslint-preset","typescript","react","nextjs","levdwire","code-style","linting","type-safe","shared-config","onboarding-friendly","scalable","internationalization"],
   "license"           : "MIT",
   "homepage"          : "https://levdwire.com/",
-  "version"           : "0.0.1",
+  "version"           : "1.0.0",
 
   "author"            : {
     "name"      : "Selçuk Çukur",
@@ -16,6 +16,10 @@
   "bugs"              : {
     "email"   : "security@levdwire.com",
     "url"     : "https://github.com/levdwire/levdwire/issues"
+  },
+
+  "scripts"           : {
+    "publish:presets"       : "pnpm build && pnpm publish --access public"
   },
 
   "devDependencies"   : {

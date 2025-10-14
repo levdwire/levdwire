@@ -30,6 +30,8 @@
     "lint:dev"          : "pnpm lint --filter=dev",
     "lint:docs"         : "pnpm lint --filter=docs",
 
+    "publish:presets"   : "cd packages/presets && pnpm publish --access public && cd ../../",
+
     "format:fix"        : "prettier --write \"**/*.{ts,tsx,md}\"",
     "format:check"      : "prettier --check \"**/*.{ts,tsx,md}\""
   },
