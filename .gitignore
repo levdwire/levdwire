@@ -61,7 +61,6 @@ jest.config.js
 .venv
 *.lockb
 *.tgz
-*.npmrc
 
 # Ignore : Vendors & Generated
 generated/
