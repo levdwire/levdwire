@@ -1,4 +1,4 @@
-import { ComponentInterface } from "@levdwire/components"
+import {ComponentInterface} from "@levdwire/components"
 
 /**
  * @name         Instances - Levdwire
@@ -31,17 +31,17 @@ export declare type StaticInstances = {
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 export declare type InstanceOptions = {
-	/**
-	 * The instance identifier.
-	 *
-	 * @type {string}
-	 */
-	id?: string
+  /**
+   * The instance identifier.
+   *
+   * @type {string}
+   */
+  id?: string
 
-	/**
-	 * The override status.
-	 *
-	 * @type {boolean}
-	 */
-	override?: boolean
+  /**
+   * The override status.
+   *
+   * @type {boolean}
+   */
+  override?: boolean
 }

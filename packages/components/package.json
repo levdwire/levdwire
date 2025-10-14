@@ -23,9 +23,9 @@
     "publish"     : "pnpm build && pnpm publish --access public"
   },
 
-  "dependencies": {
-    "@levdwire/container": "workspace:*",
-    "@levdwire/utility": "workspace:*"
+  "dependencies"      : {
+    "@levdwire/container" : "workspace:*",
+    "@levdwire/utility"   : "workspace:*"
   },
   "devDependencies"   : {
     "tsup"                      : "^8.5.0",
