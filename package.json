@@ -1,0 +1,50 @@
+{
+  "name"            : "levdwire",
+  "description"     : "Levdwire - ",
+  "keywords"        : [],
+  "license"         : "MIT",
+  "homepage"        : "https://levdwire.com/",
+  "version"         : "0.0.1",
+
+  "author"          : {
+    "name"      : "Selçuk Çukur",
+    "email"     : "hk@selcukcukur.com.tr",
+    "url"       : "https://selcukcukur.com.tr"
+  },
+
+  "bugs"            : {
+    "email"   : "security@levdwire.com",
+    "url"     : "https://github.com/levdwire/levdwire/issues"
+  },
+
+  "scripts"         : {
+    "dev"               : "",
+    "dev:web"           : "pnpm dev --filter=web",
+    "dev:app"           : "pnpm dev --filter=app",
+    "dev:dev"           : "pnpm dev --filter=dev",
+    "dev:docs"          : "pnpm dev --filter=docs",
+
+    "lint"              : "pnpm lint",
+    "lint:web"          : "pnpm lint --filter=web",
+    "lint:app"          : "pnpm lint --filter=app",
+    "lint:dev"          : "pnpm lint --filter=dev",
+    "lint:docs"         : "pnpm lint --filter=docs",
+
+    "format:fix"        : "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check"      : "prettier --check \"**/*.{ts,tsx,md}\""
+  },
+
+  "devDependencies" : {
+    "@levdwire/presets"                 : "workspace:*",
+    "eslint"                            : "^9.34.0",
+    "prettier"                          : "^3.6.2",
+    "prettier-plugin-organize-imports"  : "^4.3.0",
+    "prettier-plugin-tailwindcss"       : "^0.6.14",
+    "typescript"                        : "5.9.2"
+  },
+
+  "packageManager"  : "pnpm@10.18.0",
+  "engines"         : {
+    "node"  : ">=22"
+  }
+}
