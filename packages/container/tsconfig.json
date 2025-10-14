@@ -1,0 +1,10 @@
+{
+  "extends"         : "@levdwire/presets/levdwire-config",
+  "compilerOptions" : {
+    "paths"   : {
+      "@container"          : ["./src/"]
+    }
+  },
+  "include"         : ["./src"],
+  "exclude"         : ["dist", "build", "node_modules"]
+}

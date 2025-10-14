@@ -1,0 +1,46 @@
+{
+  "type"              : "module",
+  "name"              : "@levdwire/components",
+  "description"       : "Levdwire – ",
+  "keywords"          : [],
+  "license"           : "MIT",
+  "homepage"          : "https://levdwire.com/",
+  "version"           : "1.0.0",
+
+  "author"            : {
+    "name"      : "Selçuk Çukur",
+    "email"     : "hk@selcukcukur.com.tr",
+    "url"       : "https://selcukcukur.com.tr"
+  },
+
+  "bugs"              : {
+    "email"   : "security@levdwire.com",
+    "url"     : "https://github.com/levdwire/levdwire/issues"
+  },
+
+  "scripts"           : {
+    "build"       : "tsup",
+    "publish"     : "pnpm build && pnpm publish --access public"
+  },
+
+  "dependencies": {
+    "@levdwire/container": "workspace:*",
+    "@levdwire/utility": "workspace:*"
+  },
+  "devDependencies"   : {
+    "tsup"                      : "^8.5.0",
+    "typescript"                : "^5.9.2",
+    "vitest"                    : "^3.2.4"
+  },
+
+  "exports"           : {
+    "."     : "./src/index.ts"
+  },
+  "publishConfig"     : {
+    "access"  : "public"
+  },
+  "repository"        : {
+    "type"  : "git",
+    "url"   : "git+https://github.com/levdwire/levdwire.git"
+  }
+}
