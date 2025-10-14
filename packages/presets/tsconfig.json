@@ -1,0 +1,10 @@
+{
+  "extends"         : "@levdwire/presets/react-config",
+  "compilerOptions" : {
+    "paths"   : {
+      "@presets"          : ["./src/"]
+    }
+  },
+  "include"         : ["./src"],
+  "exclude"         : ["dist", "build", "node_modules"]
+}

@@ -1,0 +1,49 @@
+{
+  "private"           : true,
+  "name"              : "@levdwire/presets",
+  "description"       : "Levdwire - Reusable eslint presets to enforce consistent code style, type safety, and best practices across projects.",
+  "keywords"          : ["eslint","eslint-config","eslint-preset","typescript","react","nextjs","levdwire","code-style","linting","type-safe","shared-config","onboarding-friendly","scalable","internationalization"],
+  "license"           : "MIT",
+  "homepage"          : "https://levdwire.com/",
+  "version"           : "0.0.1",
+
+  "author"            : {
+    "name"      : "Selçuk Çukur",
+    "email"     : "hk@selcukcukur.com.tr",
+    "url"       : "https://selcukcukur.com.tr"
+  },
+
+  "bugs"              : {
+    "email"   : "security@levdwire.com",
+    "url"     : "https://github.com/levdwire/levdwire/issues"
+  },
+
+  "devDependencies"   : {
+    "@eslint/js"                : "^9.34.0",
+    "eslint"                    : "^9.34.0",
+    "eslint-config-prettier"    : "^10.1.1",
+    "eslint-plugin-only-warn"   : "^1.1.0",
+    "eslint-plugin-turbo"       : "^2.5.0",
+    "globals"                   : "^16.3.0",
+    "typescript"                : "^5.9.2",
+    "typescript-eslint"         : "^8.40.0"
+  },
+
+  "exports"           : {
+    "./base-eslint"     : "./src/base.js",
+    "./levdwire-eslint" : "./src/levdwire.js",
+    "./next-eslint"     : "./src/next.js",
+    "./react-eslint"    : "./src/react.js",
+    "./base-config"     : "./src/base.json",
+    "./levdwire-config" : "./src/levdwire.json",
+    "./next-config"     : "./src/next.json",
+    "./react-config"    : "./src/react.json"
+  },
+  "publishConfig"     : {
+    "access"  : "public"
+  },
+  "repository"        : {
+    "type"  : "git",
+    "url"   : "git+https://github.com/levdwire/levdwire.git"
+  }
+}
