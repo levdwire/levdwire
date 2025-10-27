@@ -45,3 +45,49 @@ function onTransitionStart(
         options
     )
 }
+
+/**
+ * Attaches a teardown-safe listener for the `transitionend` event on a given DOM scope.
+ *
+ * This sugar-style helper wraps `attachDelegate()` to listen for when a CSS transition completes.
+ * It supports both direct and delegated targets, and ensures the listener is safely removable.
+ *
+ * @param callback - A function that receives `(target, event)` when the transition ends.
+ * @param scope - The DOM element to listen on. Delegation is supported via `options.delegate`.
+ * @param options - Optional delegation and native listener flags:
+ *   - `delegate`: CSS selector to match delegated targets.
+ *   - `name`: Transition property name to filter by.
+ *   - Native listener options (`capture`, `passive`, `once`, etc.)
+ *
+ * @returns A teardown-safe remover function to unregister the listener.
+ *
+ * @example
+ * // ✅ Without delegation (direct listener on the element)
+ * const teardown = onTransitionEnd((target, event) => {
+ *   target.classList.remove('animating')
+ * }, element)
+ *
+ * // ✅ With delegation (e.g. for dynamic children inside a container)
+ * const teardown = onTransitionEnd((target, event) => {
+ *   target.classList.remove('animating')
+ * }, container, {
+ *   delegate: '.srylius',
+ *   name: 'opacity'
+ * })
+ *
+ * teardown() // removes the listener
+ */
+function onTransitionEnd(
+    callback: TransitionHandler,
+    scope: TransitionScope,
+    options: TransitionOptions = {}
+): TeardownCallback {
+    const { attachDelegate } = useTeardown()
+
+    return attachDelegate<TransitionScope, TransitionEvent>(
+        scope,
+        "transitionend",
+        callback,
+        options
+    )
+}
